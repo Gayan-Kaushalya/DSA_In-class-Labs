@@ -10,18 +10,18 @@ void heapify(int arr[], int n, int root)
 
 	if (left < n && arr[left] > arr[root]){
 		largest = left;
-   } else{
+        } else{
 		largest = root;
 	}
 
 	if (right < n && arr[right] > arr[largest]){
 		largest = right;
-   }
+        }
 
 	if (largest != root) {
-        int temp = arr[root];
-        arr[root] = arr[largest];
-        arr[largest] = temp;
+        	int temp = arr[root];
+        	arr[root] = arr[largest];
+        	arr[largest] = temp;
 
 		heapify(arr, n, largest);
 	}
@@ -38,8 +38,8 @@ void heapSort(int arr[], int n)
    // extracting elements from heap one by one
    for (int i = n - 1; i >= 1; i--) {                   
 		int temp = arr[i];
-      arr[i] = arr[0];
-      arr[0] = temp;
+      		arr[i] = arr[0];
+      		arr[0] = temp;
 
 		heapify(arr, i, 0);
 	}
