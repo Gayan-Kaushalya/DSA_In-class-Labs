@@ -69,7 +69,7 @@ int main(){
     // Initializing adjacency matrix
 	int adj[num_of_poles][num_of_poles] = { 
         { 0,  3, 0, 0,  0, 1},
-		{ 3,  0, 2, 1, 10, 0},   
+	{ 3,  0, 2, 1, 10, 0},   
         { 0,  2, 0, 3,  0, 5},
         { 0,  1, 3, 0,  5, 8},
         { 0, 10, 0, 5,  0, 4},
